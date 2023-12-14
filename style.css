@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+    background-image: linear-gradient(to bottom, #3B18B2, #48236E);
+    /* background-image: linear-gradient(to bottom, #5900ff, #4c3ec5);; */
+}
+
+/*Contenedor*/
+
+.contenedor{
+    display: block;
+    width: 700px;
+    min-height: 500px;
+    background-color: white;
+    padding: 40px;
+    border: 5px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  align-items: center;   /* Vuelven a su tamaño original los elementos */
+}
+
+/* Titulo*/
+h1{
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+input{
+    width: 80%;
+    height: 50px;
+    font-size: 25px;
+    margin: 20px;
+    padding: 10px;
+    border: 4px solid #404040;
+    border-radius: 10px;
+}
+
+button{
+    width: 150px;
+    height: 75px;
+    padding: 10px;
+    color: white;
+    background-color: #1312a8;
+    font-size: 22px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Lista de lista de tareas */
+
+#lista-de-tareass{
+    width: 80%;
+    margin-top: 20px;
+
+}
+
+/*Tareas*/
+
+.tarea {
+    width: 100%;
+    min-height: 70px;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    background-color: #407ba6;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+/* Tarea Completada */
+.tarea.completada{
+    text-decoration: line-through;
+    background-color: black;
+    border: none;
+}
+
+.tarea p{
+    min-width: 350px;
+    
+   
+}
+
+/* Iconos */
+i{
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.icono-completar{
+    color:rgb(0, 255, 0)
+}
+
+.icono-eliminar{
+    color: rgb(255, 255, 255);
+}
+
+.icono-completar:hover,
+.icono-eliminar:hover{
+    background-color: rgba(255, 255, 255, 0.523);
+}
+
+/* Barra de navegacion */
+/* MENU NAVEGACIÓN LATERAL*/
+.layout__menu{
+    display: block;
+    position: absolute;
+    padding: 0.8rem 0.5rem;
+    margin-left: 60rem;
+    background-color: rgba(255, 255, 255, 0.300);
+    height: 23rem;
+    width: auto;
+    border: 0.2rem solid black;
+    border-radius: 2rem;
+ 
+}
+
+.menu__icon{
+    display: grid;
+    grid-column: 3fr;
+    justify-content: space-between;
+    color: #3B18B2;
+    font-size: 4rem;
+    padding-bottom: 0;
+
+}
+
+ul {
+    list-style: none;
+    list-style-type: none;
+}
+
+ul:hover {
+    list-style: none;
+    list-style-type: none;
+}
+
+ul:visited {
+    list-style: none;
+    list-style-type: none;
+    color: #3B18B2;
+}
+
+ul:link {
+    list-style: none;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 1.3rem;
+    padding-top: 0;
+}
+
+a:hover {
+    cursor: pointer;
+    transition: all 300ms  #6f5ea8 ;
+    
+}
+a:visited{
+    color: #3B18B2;
+}
+
+a:link{
+    color: #3B18B2;
+
+}
